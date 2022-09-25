@@ -17,16 +17,16 @@
             The tool works with a general user interface, which can be downloaded as a .exe file from the corresponding <a href="network_plot.html">Github repository</a>. When opening the GUI, the user is presented with the options to name the project, enter a twitter user whose network they would like to visualize and analyze, a maximum recursive depth for downloading the tweets, and a number of tweets they would like to download. The GUI also contains an option to enter multiple queries (i.e. analyzing and visualizing multiple users' networks). In part B of the GUI, a excel or .csv file can be uploaded containing the columns with the information required for part A. With this method, singular use of the tool can yield data on any number of users (see the GUI below). <br>
        <img src="GUI1.png"> <br>
        If inputs in the GUI are misspecified (e.g. no whole numbers for recursive search depth and number of tweets), an error message is displayed, stating the required format of inputs. <br>
-        <img src="GUI2.png"> <br>
+        <img src="GUI2.png" width="600"> <br>
        The tool automatically saves the full queries into a .csv file on the user's machine. This enables easily re-running previous analysis in case of error or other reasons. To re-run analyses, the file with the previous folders can be uploaded into a prompt of the GUI (see below)  <br>
-        <img src="GUI3.png"> <br>
+        <img src="GUI3.png" width="600"> <br>
        		</p>
        <h2> Outputs </h2>
        The output of the tool consists of the data scraped from Twitter (files edgelist.csv and user_info.csv respectively), as well as a <a href="network_plot.html">network plot</a>, a  <a href="accounts_with_most_followers.html"> bar plot with the most followed accounts</a>, a <a href="post_plot.html">bar plot with the accounts with the most posts</a> and   		   <a href="descriptive_network_statistics.html">descriptive statistics</a> of the network. All outputs are by default saved in the working directory of the user's machine.
        <h3>network plot</h3>
        <p>
          The first output of the tool is the  <a href="network_plot.html">network plot</a>. It is an interactive plotly graph, displaying the nodes and their connections. The node size varies based on the number of followers of the respective users. The edge size varies based on the frequency of interaction between the users. The nodes are also color coded, where blue nodes mean verified members and grey nodes mean unverified members. When hovering over the nodes, information on the username of the corresponding node, their verified status and their follower count is displayed.  <br>
-         <img src="newplot.png"> <br>
+         <img src="newplot.png" width="600"> <br>
          Both the node size and the edge size were scaled as massive differences in follower count and interaction frequency are not uncommon and unscaled data overrepresented accounts with more followers or more interactions to the point that the network became unintelligeble. <br>
          An interactive version of the network plot can be found  <a href="network_plot.html">here</a>.
        </p>
@@ -45,7 +45,7 @@
     	<h3>descriptive statistics</h3>
              <p>
                The last plot contains descriptive statistics including the number of users, the average number of connections a user has, the user with the most connections and how many connections they have, the average distance (as in how many nodes of separation) between two users in the network, the number of components and the size and proportion of the largest component. <br>
-                <img src="descriptive_network_statistics.png"> <br>
+                <img src="descriptive_network_statistics.png" width="600"> <br>
                Despite no specificially interactive features, this plot is also saved as an .html file to allow smooth integration with the other outputs.
              </p>
   		   <a href="descriptive_network_statistics.html">descriptive statistics</a>
