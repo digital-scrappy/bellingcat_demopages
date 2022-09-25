@@ -16,8 +16,9 @@
           <p>
             The tool works with a general user interface, which can be downloaded as a .exe file from the corresponding <a href="network_plot.html">Github repository</a>. When opening the GUI, the user is presented with the options to name the project, enter a twitter user whose network they would like to visualize and analyze, a maximum recursive depth for downloading the tweets, and a number of tweets they would like to download. The GUI also contains an option to enter multiple queries (i.e. analyzing and visualizing multiple users' networks). In part B of the GUI, a excel or .csv file can be uploaded containing the columns with the information required for part A. With this method, singular use of the tool can yield data on any number of users (see the GUI below). <br>
        <img src="GUI1.png"> <br>
-       If inputs in the GUI are misspecified (e.g. no whole numbers for recursive search depth and number of tweets), an error message is displayed, stating the required format of inputs. <br>
+       If inputs in the GUI are misspecified (e.g. no whole numbers for recursive search depth and number of tweets), an error message is displayed, stating the required format of inputs. The same principle applies when faulty files are loaded into the GUI <br>
         <img src="GUI2.png" width="600"> <br>
+	<img src="GUI5.png" width="600"> <br>
        The tool automatically saves the full queries into a .csv file on the user's machine. This enables easily re-running previous analysis in case of error or other reasons. To re-run analyses, the file with the previous folders can be uploaded into a prompt of the GUI (see below)  <br>
         <img src="GUI3.png" width="600"> <br>
        		</p>
@@ -45,7 +46,7 @@
     	<h3>descriptive statistics</h3>
              <p>
                The last plot contains descriptive statistics including the number of users, the average number of connections a user has, the user with the most connections and how many connections they have, the average distance (as in how many nodes of separation) between two users in the network, the number of components and the size and proportion of the largest component. <br>
-                <img src="descriptive_network_statistics.png" width="600"> <br>
+                <img src="descriptive_network_statistics.png"> <br>
                Despite no specificially interactive features, this plot is also saved as an .html file to allow smooth integration with the other outputs.
              </p>
   		   <a href="descriptive_network_statistics.html">descriptive statistics</a>
